@@ -10,16 +10,16 @@ You can complete this task on the worksheet pdf if you prefer.
 
 |     Command                 |     Explanation    |
 |-----------------------------|--------------------|
-|     pwd                     | shows the current location of the terminal |
-|     ls                      | |
-|     cd directory_name       | |
-|     cd ..                   | |
-|     cd -                    | |
-|     mkdir directory_name    | |
-|     touch filename          | |
-|     git status              | |
-|     git add -A              | |
-|     git commit -m ""        | |
-|     git push                | |
-|     git pull                | |
+|     pwd                     | **p**rints the current **w**orking **d**irectory |
+|     ls                      | **l**ists **f**iles in the current directory|
+|     cd directory_name       | **c**hanges **d**irectory to the one specified|
+|     cd ..                   | **c**hanges **d**irectory to one down in the tree |
+|     cd -                    | **c**hanges **d**irectory to one down in the tree while also pwd |
+|     mkdir directory_name    | **m**a**k**es a **dir**ectory with the name specified |
+|     touch filename          | creates a file with the name specified |
+|     git status              | shows the current status of git including staged and committed files |
+|     git add -A              | adds all files to staging |
+|     git commit -m ""        | commits all staged files with the commit message specified |
+|     git push                | pushes all commits to remote |
+|     git pull                | pulls all new commits from remote |
 
