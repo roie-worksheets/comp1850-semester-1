@@ -3,10 +3,23 @@
 # You are going to write a very simple program:
 
 # Ask a user to enter two numbers (one per input)
+def get_number(text: str) -> int:
+    value = input(text)
+    
+    try:
+        return int(value)
+    except ValueError:
+        print(f"{value} is not a number.")
+        return get_number(text)
+
+a = get_number("Enter first number: ")
+b = get_number("Enter second number: ")
 
 # multiply those numbers together
+res = a * b
 
 # print out the result
+print(res)
 
 # There is an extra point available for validating that they entered numbers!
 # Add to your code so that if they entered something other than an integer it prints
