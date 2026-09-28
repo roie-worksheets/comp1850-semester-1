@@ -16,7 +16,8 @@ while True:
         savings = int(savings)
         break
     except ValueError:
-        print("Number is not an integer")
+        print("Invalid amount")
+        savings = input("How much would you like to save per month? ")
 
 # Calculate the total amount of money they will have saved by the end of the year (amount per month multiplied by 12).
 # print this out for the user with a suitable message.
