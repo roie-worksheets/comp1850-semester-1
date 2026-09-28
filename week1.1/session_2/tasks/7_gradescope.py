@@ -9,7 +9,7 @@ def get_number(text: str) -> int:
     try:
         return int(value)
     except ValueError:
-        print(f"{value} is not a number.")
+        print("That is not a number")
         return get_number(text)
 
 a = get_number("Enter first number: ")
