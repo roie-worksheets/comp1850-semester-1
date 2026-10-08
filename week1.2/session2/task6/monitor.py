@@ -1,4 +1,7 @@
 # Week 1.2, Session 2: Task 6
+import datetime
+
+
 def get_number(text, type=int):
     try:
         return type(input(text))
@@ -39,3 +42,7 @@ if op_status == 1:
         print("Machine is operating normally.")
 else:
     print("Machine is not running so no immediate action is needed.")
+
+with open("machine_log.txt", "a") as file:
+    file.write(f"{datetime.datetime.now()} {temperature=} {pressure=} {op_status=}")
+    
