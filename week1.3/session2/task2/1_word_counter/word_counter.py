@@ -15,3 +15,7 @@
 # story.txt - 290
 # story2.txt - 326
 # glasses.txt - 210
+import sys
+
+with open(sys.argv[1]) as f:
+    print(len(f.read().split()))

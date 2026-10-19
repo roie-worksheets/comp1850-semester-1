@@ -13,4 +13,4 @@ print(f"Maximum = {max(values)}")
 print(f"Mean = {sum(values) / len(values)}")
 print(f"Median = {(mid := len(values) // 2, sorted(values)[mid] if len(values) % 2 == 1 else sum(sorted(values)[mid - 1:mid + 1]) / 2)[1]}")
 
-        
+# in this i make a tuple where the first value is a variable declaration, use the value from that in the second value in the tuple, then extract the second value out of the tuple 
