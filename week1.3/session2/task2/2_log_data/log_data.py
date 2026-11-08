@@ -11,6 +11,20 @@
 # and print these out in a human-readable format:
 # IP address 192.168.1.17 failed to login at 10:42:12 on 2024-10-20
 
+import csv
+
+try:
+    with open("site.log") as f:
+        for row in csv.DictReader(f):
+            if row["Request"] == "POST /login" and row["Status_Code"] == "401":
+                print(
+                    f"IP address {row['IP_Address']} failed to login "
+                    f"at {row['Time']} on {row['Date']}"
+                )
+except FileNotFoundError:
+    print("Error: site.log was not found.")
+except (OSError, KeyError) as error:
+    print(f"Error reading the log file: {error}")
 
 # Hints:
 # - Remember to handle file errors

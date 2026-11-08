@@ -2,9 +2,11 @@
 
 i = 0
 
-while i < 5:
-	print(i)
-	i = i + 1
+while i <= 20:
+    print(i)
+    if i % 4 == 0:
+        print("This number is a multiple of 4")
+    i = i + 1
 
 # Modify the loop to print numbers up to and including 20
 

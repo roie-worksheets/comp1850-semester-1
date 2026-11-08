@@ -1,8 +1,15 @@
 # Week 1.3, Session 1: Task 2a
 
+# k = 2
+# while True:
+#     k = 2 * k
+#     if k > 200:
+#         break
+#     print(k)
+
 k = 2
-while True:
-    k = 2 * k 
+while 2 * k <= 200:
+    k = 2 * k
     print(k)
     
 
