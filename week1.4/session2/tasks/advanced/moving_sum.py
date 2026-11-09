@@ -12,3 +12,8 @@
     for the list such as moving_cummulative_sum(x) with x being the
     list to be operated on.
 """
+
+def moving_sum(xs, total = 0):
+    return [] if not xs else [total + xs[0]] + moving_sum(xs[1:], total + xs[0])
+
+print(moving_sum([5, 6, 7, 1, 2, 3]))
