@@ -33,6 +33,15 @@ def income_tax_calculator(annual_income):
         one decimal point. You can use the round() function,
         e.g round(tax, 1) 0.0 if annual_income is not a positive integer.
     """
+    if (not isinstance(annual_income, int)
+        or isinstance(annual_income, bool)
+        or annual_income <= 0): return 0.0
+
+    basic_rate_tax = min(max(annual_income - 12_570, 0), 37_700) * 0.20
+    higher_rate_tax = min(max(annual_income - 50_270, 0), 74_870) * 0.40
+    additional_rate_tax = max(annual_income - 125_140, 0) * 0.45
+
+    return round(basic_rate_tax + higher_rate_tax + additional_rate_tax, 1)
 
 
 # Check if the following lines produce the correct output

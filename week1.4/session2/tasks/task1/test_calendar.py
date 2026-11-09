@@ -28,3 +28,12 @@ print(calendar.month(2025, 10))
 # Your task is to write code to make 3 functions calls to the calendar
 # function with different values to the optional arguments (w, l, c, and m).
 # Display the output to observe the differences.
+
+import calendar
+
+print(calendar.month(2025, 10, w=2, l=1))
+print(calendar.month(2025, 10, w=5, l=2))
+
+print(calendar.calendar(2025, w=2, l=1, c=6, m=3))
+print(calendar.calendar(2025, w=4, l=2, c=10, m=2))
+print(calendar.calendar(2025, w=1, l=1, c=3, m=4))

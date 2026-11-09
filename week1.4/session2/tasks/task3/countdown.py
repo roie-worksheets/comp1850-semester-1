@@ -13,12 +13,12 @@ def countdown(n):
     Returns:
         None, prints the countdown sequence from n to 0.
     """
+    if n == 0: # base case
+        print(0)
+        return
 
-    # Complete your code here
-    # base case
-
-    # recursive case
-
+    print(n)
+    countdown(n - 1) # recursive case
 
 # check if correct output is produced
 countdown(30)    # 30 ... 0 (Note: each number is printed in a separate line)
@@ -27,3 +27,6 @@ countdown(5)     # 5 ... 0  (Note: each number in printed in a separate line)
 
 # Once you have completed, your next task is to write an equivalent function that
 # uses a loop.
+def countdown_loop(n):
+    for number in range(n, -1, -1):
+        print(number)

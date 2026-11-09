@@ -1,5 +1,8 @@
 # Week 4, Session 2: Task 2
 
+from collections import Counter
+
+
 def most_frequent_string(votes):
     """
     This function identifies the string that appears most frequently
@@ -16,10 +19,7 @@ def most_frequent_string(votes):
         and int is the count of its occurences
         - None, None: if votes is empty.
     """
-
-    # Your task is to complete the body of the function based on the details in the docstring.
-    # Hint 1: You can complete this task with for loops or comprehensions 
-    # Hint 2: Think about the properties of the various collection-types
+    return Counter(votes).most_common(1)[0] if votes else (None, None)
 
 
 fruit = ['date', 'apple', 'cherry', 'date', 'apple', 'apple', 'elderberry',

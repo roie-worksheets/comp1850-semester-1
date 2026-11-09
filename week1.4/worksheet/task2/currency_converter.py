@@ -10,6 +10,10 @@
 """
 
 def currency_converter(amount, from_currency, to_currency):
+    """
+    Converts an amount from "from_currency" to "to_currency", where
+    each is a 3 character string within ["GBP, "CNY", "PHP", "INR"]
+    """
     conversion_rate = {
         'GBP': {'CNY': 9.24, 'PHP': 75.00, 'INR': 109.06},
         'CNY': {'GBP': 0.11, 'PHP': 8.12, 'INR': 11.81},

@@ -14,10 +14,13 @@
 # the output produced the the function is used.
 
 
-def circle_area(radius, pi_value):  # assign a default value to pi_value
+import math
+
+
+def circle_area(radius, pi_value = math.pi):  # assign a default value to pi_value
     # complete the code here
 
-    return area
+    return pi_value * radius ** 2
 
 
 # Check if correct output is produced
